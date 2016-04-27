@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6e4e1">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Large Text"
+            android:textColor="@color/black"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="  RadioButton"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  RadioButton"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  RadioButton"
+                android:textColor="@color/black"
+                android:layout_marginBottom="15dp"/>
+        </RadioGroup>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:text="@string/str_next"
+            android:background="#6d8887"
+            android:elevation="5dp"
+            android:layout_below="@id/linearLayout1"/>
+    </LinearLayout>
+</RelativeLayout>

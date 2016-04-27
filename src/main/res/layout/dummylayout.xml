@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:configChanges="orientation|screenSize|keyboardHidden"
+    android:gravity="start|center"
+    android:orientation="horizontal"
+    android:screenOrientation="landscape" >
+    
+        <fragment
+            android:configChanges="orientation|screenSize"
+            android:id="@+id/cameraFragment"
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/vidFragment"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="false"
+            android:layout_centerHorizontal="false"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="false"
+            class="org.opencv.samples.facedetect.FragFD" />
+
+        <fragment
+            android:id="@+id/vidFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            class="org.opencv.samples.facedetect.VidFrag"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+</RelativeLayout>
+
+<!--         android:layout_weight="0.76" -->
+

@@ -1,0 +1,40 @@
+apply plugin: 'com.android.application'
+
+android {
+    sourceSets.main.jni.srcDirs = []
+    compileSdkVersion 21
+    buildToolsVersion "23.0.0 rc2"
+
+    defaultConfig {
+        applicationId "org.opencv.samples.facedetect"
+        minSdkVersion 9
+        targetSdkVersion 17
+
+        ndk {
+            moduleName "detection_based_tracker"
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE-FIREBASE.txt'
+        exclude 'META-INF/NOTICE'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile project(':sdk')
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:22.2.0'
+    compile 'org.apache.commons:commons-math3:3.3'
+    compile 'com.android.support:design:22.2.0'
+    compile 'com.parse.bolts:bolts-android:1+'
+    compile 'com.parse:parse-android:1+'
+    compile 'com.firebase:firebase-client-android:2.5.2+'
+    compile project(':libraries:opencv')
+}

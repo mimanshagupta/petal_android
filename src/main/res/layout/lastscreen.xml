@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblank"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="88dp"
+        android:layout_toRightOf="@+id/button1"
+        android:background="@android:color/transparent"
+        android:text="More Videos!" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="109dp"
+        android:background="@android:color/transparent"
+        android:text="Re-Calibrate for New User!" />
+
+    <ListView
+        android:id="@+id/lastList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/counter_distracted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/finalCount"
+            android:text="Distracted"
+            android:textColor="#0e2b63" />
+
+        <TextView
+            android:id="@+id/counter_sleepy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/finalCount"
+            android:text="Sleepy"
+            android:textColor="#0e2b63" />
+
+        <TextView
+            android:id="@+id/counter_zoned"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/finalCount"
+            android:text="Zoned Out"
+            android:textColor="#0e2b63" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/finalCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:textColor="#0e2b63"
+        android:layout_centerHorizontal="true"
+        android:text="Final Count" />
+
+</RelativeLayout>

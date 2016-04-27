@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundblank"
+    android:visibility="visible"
+    android:orientation="horizontal"
+    tools:context="org.opencv.samples.facedetect.StudentLoginActivity">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:layout_marginBottom="27dp"
+                android:layout_gravity="center_horizontal"
+                android:text="Login as Student"
+                android:textColor="@color/black"
+                android:textSize="30dip"
+                android:gravity="center"/>
+
+            <!-- Email Label -->
+            <EditText android:id="@+id/input_email"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_centerHorizontal="true"
+                android:hint="Email"
+                android:layout_below="@id/icon"/>
+
+            <!-- Password Label -->
+            <EditText android:id="@+id/input_password"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:inputType="textPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/input_email"
+                android:hint="Password"/>
+
+            <LinearLayout
+                android:id="@+id/buttonPanel"
+                android:layout_width="500dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/input_password"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginRight="10dp"
+                    android:padding="12dp"
+                    android:gravity="center"
+                    android:text="Login"/>
+
+                <Button android:id="@+id/btn_signup"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:padding="12dp"
+                    android:text="Sign Up for Student&apos;s Account"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

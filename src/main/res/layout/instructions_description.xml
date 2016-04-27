@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/translucent"
+    android:orientation="horizontal" >  
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >  
+    
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >  
+    
+            <TextView
+                  
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:text="@string/instructions"
+                android:textSize="40sp"
+                android:textColor="@color/black"
+                android:id="@+id/ititle" />  
+    
+            <TextView
+                android:id="@+id/idesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/instructions_description"
+                android:textSize="20sp"
+                android:textColor="@color/black" />  
+    
+            <Button
+                android:id="@+id/close_instruct_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="closeOnClick"
+                android:text="@string/close"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:background="@null" />  
+        </LinearLayout>  
+    </ScrollView>  
+    
+</RelativeLayout> 
